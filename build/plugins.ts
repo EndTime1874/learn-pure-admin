@@ -18,6 +18,7 @@ export function getPluginsList(
 ) {
   const prodMock = true;
   const lifecycle = process.env.npm_lifecycle_event;
+
   return [
     vue(),
     // jsx、tsx语法支持
