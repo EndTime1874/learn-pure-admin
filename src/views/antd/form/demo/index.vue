@@ -294,8 +294,8 @@ function onSubmit() {
           type="primary"
           :loading="confirmLoading"
           @click="handleSubmit"
-          >提交</a-button
-        >
+          >提交
+        </a-button>
         <a-button @click="handleReset2">重置</a-button>
       </div>
     </aside>
