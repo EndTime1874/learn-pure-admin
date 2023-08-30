@@ -132,7 +132,7 @@ const formItems2 = reactive<FormItem[]>([
   {
     type: "input",
     sort: 1,
-    colConfig: { span: 23 },
+    colConfig: { span: 24 },
     formItemConfig: {
       label: "标题",
       name: "title",
@@ -226,7 +226,7 @@ function onSubmit() {
 <template>
   <div class="app-container">
     <aside class="p-4 mb-8 border-2 border-blue-300">
-      <span class="text-blue-300">第一种：列表｜模式一</span>
+      <div class="mb-4 text-blue-300">第一种：列表｜无需操作</div>
       <SelfForm
         ref="selfForm"
         :model="formState"
@@ -239,7 +239,7 @@ function onSubmit() {
     </aside>
 
     <aside class="p-4 mb-8 border-2 border-blue-400">
-      <span class="text-blue-400">第二种：列表｜模式二</span>
+      <div class="mb-4 text-blue-400">第二种：列表｜需要操作</div>
       <SelfForm
         ref="selfForm"
         :model="formState"
@@ -277,7 +277,7 @@ function onSubmit() {
     </aside>
 
     <aside class="p-4 border-2 border-amber-400">
-      <span class="text-amber-400">第三种：详情页｜表单模式</span>
+      <div class="mb-4 text-amber-400">第三种：详情页｜表单模式</div>
       <SelfForm
         ref="formRef"
         :model="formData"
