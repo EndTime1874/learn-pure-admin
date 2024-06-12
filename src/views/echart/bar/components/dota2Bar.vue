@@ -4,15 +4,20 @@
  * @Author: yuweiyuan
  * @Date: 2024-03-09 09:36:26
  * @LastEditors: yuweiyuan
- * @LastEditTime: 2024-03-09 15:28:13
+ * @LastEditTime: 2024-06-12 16:02:41
 -->
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, watch, watchEffect } from "vue";
+import {
+  ArrowUpOutlined,
+  ArrowDownOutlined,
+  RiseOutlined,
+  HourglassOutlined
+} from "@ant-design/icons-vue";
 import { useECharts } from "@pureadmin/utils";
+import { SolarDay, LunarHour } from "tyme4ts"; // https://github.com/6tail/tyme4ts
 import { dateFormat } from "../utils/tools";
-
-const chartRef = ref();
-const { setOptions } = useECharts(chartRef);
+import Toolbar from "./toolbar.vue";
 
 const props = defineProps({
   resultData: {
@@ -24,9 +29,13 @@ const props = defineProps({
     default: ""
   }
 });
-const inlineData: any = computed(() => props.resultData);
 
 // 根据配置项渲染ECharts
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef);
+const inlineData: any = computed(() => props.resultData);
+const monthValue = ref();
+
 setOptions({
   backgroundColor: "#fff",
   title: {
@@ -100,17 +109,62 @@ setOptions({
   ]
 });
 
-const niceDayList = computed(() => {
+const dayList = ref([]);
+
+function setDayList(type, num) {
+  if (type === "winSort") {
+    dayList.value = getNiceDays(num);
+  } else if (type === "loseSort") {
+    dayList.value = getBadDays(num);
+  }
+
+  dayList.value?.forEach(item => {
+    if (!item.SixChar) {
+      const d = new Date(item.date * 1000);
+      item.SixChar = addWord(
+        d.getFullYear(),
+        (d.getMonth() + 1).toString(),
+        d.getDate().toString()
+      );
+    }
+  });
+}
+// 上分日子（最佳状态）
+function getNiceDays(showCount = 3) {
+  return inlineData.value
+    .filter(f => (monthValue.value ? f.dateMount === monthValue.value : f))
+    .sort(
+      (a, b) =>
+        Number(a.lose_count) - Number(a.win_count) - (Number(b.lose_count) - Number(b.win_count))
+    )
+    .slice(0, showCount);
+  // .sort((a, b) => a.date - b.date);
+}
+
+// 掉分日子（最差状态）
+function getBadDays(showCount = 3) {
   return inlineData.value
     .sort(
       (a, b) =>
-        Number(a.lose_count) -
-        Number(a.win_count) -
-        (Number(b.lose_count) - Number(b.win_count))
+        Number(a.win_count) - Number(a.lose_count) - (Number(b.win_count) - Number(b.lose_count))
     )
-    .slice(0, 3)
-    .sort((a, b) => a.date - b.date);
-});
+    .slice(0, showCount);
+  // .sort((a, b) => a.date - b.date);
+}
+
+// 添加【天干/地支】字段
+function addWord(year, month, day) {
+  const solarDay = SolarDay.fromYmd(+year, +month, +day);
+  const lunarDay = solarDay.getLunarDay(); // 转为农历 (不包含时辰)
+
+  console.log("%c [ lunarDay ] >>>", "color:#2656c9", lunarDay.toString());
+
+  const yearTianGan = lunarDay.getYearSixtyCycle(); // 年——天干地支
+  const monthTianGan = lunarDay.getMonthSixtyCycle(); // 月——天干地支
+  const dayTianGan = lunarDay.getSixtyCycle(); // 日——天干地支
+
+  return `${yearTianGan.toString()} ${monthTianGan.toString()} ${dayTianGan.toString()}`;
+}
 
 const allCount = computed(() => {
   return inlineData.value.reduce(
@@ -123,42 +177,103 @@ const allCount = computed(() => {
     { all: 0, win: 0, lose: 0 }
   );
 });
+
+/* -----------------------------------------------------------------------------
+ * 工具栏
+ * -----------------------------------------------------------------------------*/
+
+const toolbarRef = ref(null);
+
+// 监听场数变化
+watch(
+  () => toolbarRef.value?.showCount,
+  value => {
+    setDayList(toolbarRef.value?.showType, value);
+  }
+);
+// 监听排序变化
+watch(
+  () => toolbarRef.value?.showType,
+  value => {
+    setDayList(value, toolbarRef.value?.showCount);
+  }
+);
+// 监听月份变化
+watch(
+  () => monthValue.value,
+  () => {
+    setDayList(toolbarRef.value?.showType, toolbarRef.value?.showCount);
+  }
+);
+watchEffect(() => {
+  console.log(`%c ${props.year}[ 触发了几次 ] >>>`, "color:#2656c9", dayList.value);
+});
 </script>
 
 <template>
-  <a-card :title="year + '年'" :bordered="false">
-    <a-descriptions bordered class="pb-6" :column="2">
-      <a-descriptions-item label="最佳状态" :span="4">
+  <a-card :bordered="false">
+    <template #title>
+      <div class="flex flex-start items-center">
+        <p class="mr-4">{{ year }}年</p>
+        <a-date-picker
+          v-model:value="monthValue"
+          valueFormat="YYYY-MM"
+          picker="month"
+          placeholder="月份"
+        />
+      </div>
+    </template>
+
+    <Toolbar ref="toolbarRef" />
+
+    <a-descriptions bordered class="pb-6" :column="4">
+      <a-descriptions-item label="详情数据" :span="4">
+        <a-empty v-if="!dayList.length" description="当月并无数据！" />
+
         <ul>
-          <li v-for="day of niceDayList">
-            <span class="label"
-              >{{ day.dateCN }} {{ dateFormat(day.date, "dddd") }}</span
-            ><a-divider type="vertical" />
-            <a-tag color="green" :bordered="false"
-              >胜 {{ day.win_count }} 场 </a-tag
-            ><a-divider type="vertical" />
-            <a-tag color="red" :bordered="false"
-              >输 {{ day.lose_count }} 场</a-tag
-            ><a-divider type="vertical" />
-            <a-tag color="blue" :bordered="false"
-              >净胜 {{ day.win_count - day.lose_count }} 场</a-tag
-            >
-            <!-- <a-divider/> -->
+          <li class="flex-c justify-start" v-for="(day, index) of dayList">
+            <p class="label">
+              <span>{{ index + 1 }}、{{ day.dateCN }}</span>
+              <span>{{ dateFormat(day.date, "dddd") }}</span>
+            </p>
+
+            <a-divider type="vertical" />
+            <span class="label-tag">
+              <a-tag color="green" :bordered="false">
+                <template #icon> <ArrowUpOutlined /> </template>
+                胜 {{ day.win_count }} 场
+              </a-tag>
+              <a-tag color="red" :bordered="false">
+                <template #icon> <ArrowDownOutlined /> </template>
+                输 {{ day.lose_count }} 场
+              </a-tag>
+              <a-tag color="blue" :bordered="false">
+                <template #icon> <RiseOutlined /> </template>
+                净胜 {{ day.win_count - day.lose_count }} 场
+              </a-tag>
+
+              <a-tag color="" :bordered="false">
+                <template #icon> <HourglassOutlined /> </template>
+                {{ day.SixChar }}
+              </a-tag>
+            </span>
           </li>
         </ul>
       </a-descriptions-item>
-      <a-descriptions-item label="胜场总数">{{
-        allCount.win
-      }}</a-descriptions-item>
-      <a-descriptions-item label="净胜场总数">{{
-        allCount.win - allCount.lose
-      }}</a-descriptions-item>
-      <a-descriptions-item label="败场总数">{{
-        allCount.lose
-      }}</a-descriptions-item>
-      <a-descriptions-item label="总场数">{{
-        allCount.all
-      }}</a-descriptions-item>
+
+      <a-descriptions-item label="净胜场总数">
+        {{ allCount.win - allCount.lose }}
+      </a-descriptions-item>
+
+      <a-descriptions-item label="胜场总数">
+        {{ allCount.win }}
+      </a-descriptions-item>
+      <a-descriptions-item label="败场总数">
+        {{ allCount.lose }}
+      </a-descriptions-item>
+      <a-descriptions-item label="总场数">
+        {{ allCount.all }}
+      </a-descriptions-item>
     </a-descriptions>
 
     <div ref="chartRef" style="width: 100%; height: 50vh" />
@@ -169,10 +284,15 @@ const allCount = computed(() => {
 .ant-card {
   margin: 24px;
 }
-.ant-tag {
-  min-width: 55px;
+:deep(.ant-tag) {
+  display: inline-block;
   text-align: center;
+  padding: 2px 7px;
+  span {
+    margin-inline-start: 1px;
+  }
 }
+
 :deep(.ant-descriptions-item-label) {
   width: 120px;
   text-align: center;
@@ -186,10 +306,18 @@ ul {
     }
 
     .label {
-      display: inline-block;
-      width: 170px;
-      text-align: end;
+      width: 220px;
+      display: flex;
+      justify-content: space-around;
       letter-spacing: 0.25px;
+      &:first-child span {
+        letter-spacing: 1px;
+      }
+    }
+    .label-tag {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 90px 90px 100px 150px;
     }
   }
 }
