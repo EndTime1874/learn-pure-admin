@@ -1,27 +1,33 @@
 <!--
  * @Descripttion: 
  * @version: 
- * @Author: yuweiyuan
+ * @Author: yyy
  * @Date: 2024-03-09 08:39:14
- * @LastEditors: yuweiyuan
- * @LastEditTime: 2024-06-12 10:59:23
+ * @LastEditors: yyy
+ * @LastEditTime: 2025-01-21 10:42:15
 -->
 
 <script setup lang="ts">
 import { onBeforeMount, ref } from "vue";
 import { regroupArr, dateFormat, compareDates } from "./utils/tools";
-// import { dota2Data } from "./utils/mockData.js";
-import basicDataOfDota2 from "./utils/yyy.json";
+import yyyDataOfDota2 from "./utils/yyy.json";
+import zjjDataOfDota2 from "./utils/zjj.json";
 import dota2Bar from "./components/dota2Bar.vue";
 
 onBeforeMount(() => {
-  init();
+  onInit();
 });
 
 const result = ref();
+const userData = ref("yyy");
 
-function init() {
-  const arr = getData(basicDataOfDota2.calendar);
+function onChange({ target }) {
+  if (target.value === "yyy") onInit(yyyDataOfDota2);
+  else if (target.value === "zjj") onInit(zjjDataOfDota2);
+}
+
+function onInit(data: any = yyyDataOfDota2) {
+  const arr = getData(data.calendar);
   const reduceYear = regroupArr(arr, "dateYear").map(yearData => yearData.sort(compareDates));
   result.value = reduceYear.reverse();
 
@@ -55,7 +61,13 @@ function getData(list) {
 
 <template>
   <div>
-    <div v-for="d of result">
+    <h2 class="mb-2">2018年 ~ 2023年 数据汇总</h2>
+    <a-radio-group class="mb-4" v-model:value="userData" @change="onChange">
+      <a-radio-button value="yyy">yyy</a-radio-button>
+      <a-radio-button value="zjj">zjj</a-radio-button>
+    </a-radio-group>
+
+    <div class="mb-4" v-for="d of result" :key="d[0].dateYear">
       <dota2Bar :resultData="d" :year="d[0].dateYear" />
     </div>
   </div>

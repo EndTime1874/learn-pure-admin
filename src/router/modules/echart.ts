@@ -1,4 +1,5 @@
 import piechart from "@/assets/svg/antdesign.svg?component";
+import dota2Icon from "@/assets/svg/dota2.svg";
 
 const Layout = () => import("@/layout/index.vue");
 
@@ -6,7 +7,7 @@ export default {
   path: "/echart",
   component: Layout,
   meta: {
-    title: "Echart｜图表",
+    title: "暂存",
     icon: piechart
   },
   children: [
@@ -15,7 +16,8 @@ export default {
       component: () => import("@/views/echart/bar/index.vue"),
       name: "EchartBar",
       meta: {
-        title: "柱状图"
+        title: "Dota2 数据统计",
+        icon: dota2Icon
       }
     },
     {
@@ -23,7 +25,7 @@ export default {
       component: () => import("@/views/echart/pie/index.vue"),
       name: "EchartPie",
       meta: {
-        title: "饼图"
+        title: "工具集"
       }
     }
   ]

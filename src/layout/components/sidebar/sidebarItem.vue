@@ -55,12 +55,7 @@ const getsubMenuIconStyle = computed((): CSSProperties => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    margin:
-      layout.value === "horizontal"
-        ? "0 5px 0 0"
-        : isCollapse.value
-        ? "0 auto"
-        : "0 5px 0 0"
+    margin: layout.value === "horizontal" ? "0 5px 0 0" : isCollapse.value ? "0 auto" : "0 5px 0 0"
   };
 });
 
@@ -136,12 +131,9 @@ function hoverMenu(key) {
 
 // 左侧菜单折叠后，当菜单没有图标时只显示第一个文字并加上省略号
 function overflowSlice(text, item?: any) {
-  const newText =
-    (text?.length > 1 ? text.toString().slice(0, 1) : text) + "...";
+  const newText = (text?.length > 1 ? text.toString().slice(0, 1) : text) + "...";
   if (item && !(isCollapse.value && item?.parentId === null)) {
-    return layout.value === "mix" &&
-      item?.pathList?.length === 2 &&
-      isCollapse.value
+    return layout.value === "mix" && item?.pathList?.length === 2 && isCollapse.value
       ? newText
       : text;
   }
@@ -190,16 +182,11 @@ function resolvePath(routePath) {
     :class="{ 'submenu-title-noDropdown': !isNest }"
     :style="getNoDropdownStyle"
   >
-    <div
-      v-if="toRaw(props.item.meta.icon)"
-      class="sub-menu-icon"
-      :style="getsubMenuIconStyle"
-    >
+    <div v-if="toRaw(props.item.meta.icon)" class="sub-menu-icon" :style="getsubMenuIconStyle">
       <component
         :is="
           useRenderIcon(
-            toRaw(onlyOneChild.meta.icon) ||
-              (props.item.meta && toRaw(props.item.meta.icon))
+            toRaw(onlyOneChild.meta.icon) || (props.item.meta && toRaw(props.item.meta.icon))
           )
         "
       />
@@ -241,11 +228,7 @@ function resolvePath(routePath) {
           <template #content>
             {{ onlyOneChild.meta.title }}
           </template>
-          <span
-            ref="menuTextRef"
-            :style="getMenuTextStyle"
-            @mouseover="hoverMenu(onlyOneChild)"
-          >
+          <span ref="menuTextRef" :style="getMenuTextStyle" @mouseover="hoverMenu(onlyOneChild)">
             {{ onlyOneChild.meta.title }}
           </span>
         </el-tooltip>
@@ -254,34 +237,17 @@ function resolvePath(routePath) {
     </template>
   </el-menu-item>
 
-  <el-sub-menu
-    v-else
-    ref="subMenu"
-    v-bind="expandCloseIcon"
-    :index="resolvePath(props.item.path)"
-  >
+  <el-sub-menu v-else ref="subMenu" v-bind="expandCloseIcon" :index="resolvePath(props.item.path)">
     <template #title>
-      <div
-        v-if="toRaw(props.item.meta.icon)"
-        :style="getsubMenuIconStyle"
-        class="sub-menu-icon"
-      >
-        <component
-          :is="useRenderIcon(props.item.meta && toRaw(props.item.meta.icon))"
-        />
+      <div v-if="toRaw(props.item.meta.icon)" :style="getsubMenuIconStyle" class="sub-menu-icon">
+        <component :is="useRenderIcon(props.item.meta && toRaw(props.item.meta.icon))" />
       </div>
       <span v-if="layout === 'horizontal'">
         {{ props.item.meta.title }}
       </span>
       <div
         :style="getSubMenuDivStyle(props.item)"
-        v-if="
-          !(
-            isCollapse &&
-            toRaw(props.item.meta.icon) &&
-            props.item.parentId === null
-          )
-        "
+        v-if="!(isCollapse && toRaw(props.item.meta.icon) && props.item.parentId === null)"
       >
         <el-tooltip
           v-if="layout !== 'horizontal'"
@@ -293,11 +259,7 @@ function resolvePath(routePath) {
           <template #content>
             {{ props.item.meta.title }}
           </template>
-          <span
-            ref="menuTextRef"
-            :style="getSubTextStyle"
-            @mouseover="hoverMenu(props.item)"
-          >
+          <span ref="menuTextRef" :style="getSubTextStyle" @mouseover="hoverMenu(props.item)">
             {{ overflowSlice(props.item.meta.title, props.item) }}
           </span>
         </el-tooltip>

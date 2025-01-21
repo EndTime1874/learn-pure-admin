@@ -1,10 +1,10 @@
 <!--
  * @Descripttion: 
  * @version: 
- * @Author: yuweiyuan
+ * @Author: yyy
  * @Date: 2024-03-09 09:36:26
- * @LastEditors: yuweiyuan
- * @LastEditTime: 2024-06-12 16:02:41
+ * @LastEditors: yyy
+ * @LastEditTime: 2025-01-21 10:41:03
 -->
 <script setup lang="ts">
 import { computed, ref, watch, watchEffect } from "vue";
@@ -157,7 +157,7 @@ function addWord(year, month, day) {
   const solarDay = SolarDay.fromYmd(+year, +month, +day);
   const lunarDay = solarDay.getLunarDay(); // 转为农历 (不包含时辰)
 
-  console.log("%c [ lunarDay ] >>>", "color:#2656c9", lunarDay.toString());
+  // console.log("%c [ lunarDay ] >>>", "color:#2656c9", lunarDay.toString());
 
   const yearTianGan = lunarDay.getYearSixtyCycle(); // 年——天干地支
   const monthTianGan = lunarDay.getMonthSixtyCycle(); // 月——天干地支
@@ -206,12 +206,12 @@ watch(
   }
 );
 watchEffect(() => {
-  console.log(`%c ${props.year}[ 触发了几次 ] >>>`, "color:#2656c9", dayList.value);
+  // console.log(`%c ${props.year}[ 触发了几次 ] >>>`, "color:#2656c9", dayList.value);
 });
 </script>
 
 <template>
-  <a-card :bordered="false">
+  <a-card :bordered="false" style="margin: 0">
     <template #title>
       <div class="flex flex-start items-center">
         <p class="mr-4">{{ year }}年</p>
