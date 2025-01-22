@@ -4,8 +4,21 @@
 
 import { type multipleScopeVarsOptions } from "@pureadmin/theme";
 
+/** 定义主题颜色配置接口 */
+interface ThemeColor {
+  subMenuActiveText: string;
+  menuBg: string;
+  menuHover: string;
+  subMenuBg: string;
+  subMenuActiveBg: string;
+  menuText: string;
+  sidebarLogo: string;
+  menuTitleHover: string;
+  menuActiveBefore: string;
+}
+
 /** 预设主题色 */
-const themeColors = {
+const themeColors: Record<string, ThemeColor> = {
   default: {
     subMenuActiveText: "#fff",
     menuBg: "#001529",

@@ -31,8 +31,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
     loadEnv(mode, root)
   );
   return {
-    // base: VITE_PUBLIC_PATH,
-    base: "/learn-pure-admin",
+    base: VITE_PUBLIC_PATH,
     root,
     resolve: {
       alias
@@ -47,7 +46,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
       // 本地跨域代理 https://cn.vitejs.dev/config/server-options.html#server-proxy
       proxy: {
         "/opendota-api": {
-          target: "https://api.opendota.com/api​",
+          target: "https://api.opendota.com/api",
           changeOrigin: true
         }
       }

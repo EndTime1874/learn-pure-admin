@@ -4,24 +4,24 @@
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS=--max-old-space-size=4096 vite",
-    "serve": "pnpm dev",
+    "serve": "npm run dev",
+    "build:dev": "vite build --mode development",
     "build": "rimraf dist && NODE_OPTIONS=--max-old-space-size=8192 vite build",
     "build:staging": "rimraf dist && vite build --mode staging",
     "report": "rimraf dist && vite build",
     "preview": "vite preview",
-    "preview:build": "pnpm build && vite preview",
+    "preview:build": "npm run build && vite preview",
     "typecheck": "tsc --noEmit && vue-tsc --noEmit --skipLibCheck",
     "svgo": "svgo -f src/assets/svg -o src/assets/svg",
     "cloc": "NODE_OPTIONS=--max-old-space-size=4096 cloc . --exclude-dir=node_modules --exclude-lang=YAML",
-    "clean:cache": "rimraf node_modules && rimraf .eslintcache && pnpm install",
+    "clean:cache": "rimraf node_modules && rimraf .eslintcache && npm install",
     "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock,build}/**/*.{vue,js,ts,tsx}\" --fix",
     "lint:prettier": "prettier --write  \"src/**/*.{js,ts,json,tsx,css,scss,vue,html,md}\"",
     "lint:stylelint": "stylelint \"**/*.{html,vue,css,scss}\" --fix --cache --cache-location node_modules/.cache/stylelint/",
-    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
+    "lint:lint-staged": "npx lint-staged -c ./.husky/lintstagedrc.js",
     "lint:pretty": "pretty-quick --staged",
-    "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:stylelint",
+    "lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:stylelint",
     "prepare": "husky install",
-    "preinstall": "npx only-allow pnpm",
     "test": "jest"
   },
   "browserslist": [
@@ -79,6 +79,7 @@
     "autoprefixer": "^10.4.14",
     "cloc": "^2.11.0",
     "cssnano": "^6.0.1",
+    "esbuild": "^0.24.2",
     "eslint": "^8.43.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.15.1",
@@ -120,20 +121,6 @@
     "vitest": "^0.34.3",
     "vue-eslint-parser": "^9.3.1",
     "vue-tsc": "^1.8.1"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "rollup",
-        "webpack",
-        "core-js"
-      ]
-    },
-    "allowedDeprecatedVersions": {
-      "sourcemap-codec": "*",
-      "w3c-hr-time": "*",
-      "stable": "*"
-    }
   },
   "repository": "git@github.com:pure-admin/pure-admin-thin.git",
   "author": "xiaoxian521",
