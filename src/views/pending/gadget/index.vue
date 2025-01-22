@@ -28,7 +28,7 @@ const header1 = reactive({
 const header2 = reactive({
   title: "header 2",
   info: {
-    content: "header 2"
+    content: "内容...."
   }
 });
 const header3 = reactive({
@@ -60,7 +60,9 @@ function onChange(date) {
           <SixtyBox :list="header1.info.dateWords" class="mt-2" />
         </a-card>
       </a-collapse-panel>
-      <a-collapse-panel key="2" :header="header2.title"> </a-collapse-panel>
+      <a-collapse-panel key="2" :header="header2.title">
+        {{ header2.info.content }}</a-collapse-panel
+      >
       <a-collapse-panel key="3" :header="header3.title" collapsible="disabled"> </a-collapse-panel>
     </a-collapse>
   </div>
