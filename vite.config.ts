@@ -31,7 +31,8 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
     loadEnv(mode, root)
   );
   return {
-    base: VITE_PUBLIC_PATH,
+    // base: VITE_PUBLIC_PATH,
+    base: "/learn-pure-admin",
     root,
     resolve: {
       alias

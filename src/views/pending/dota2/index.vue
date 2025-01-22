@@ -9,9 +9,9 @@
 
 <script setup lang="ts">
 import { onBeforeMount, ref } from "vue";
-import { regroupArr, dateFormat, compareDates } from "./utils/tools";
-import yyyDataOfDota2 from "./utils/yyy.json";
-import zjjDataOfDota2 from "./utils/zjj.json";
+import { regroupArr, dateFormat, compareDates } from "../utils/tools";
+import yyyDataOfDota2 from "../utils/yyy.json";
+import zjjDataOfDota2 from "../utils/zjj.json";
 import dota2Bar from "./components/dota2Bar.vue";
 
 onBeforeMount(() => {

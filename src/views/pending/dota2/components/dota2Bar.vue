@@ -15,8 +15,7 @@ import {
   HourglassOutlined
 } from "@ant-design/icons-vue";
 import { useECharts } from "@pureadmin/utils";
-import { SolarDay, LunarHour } from "tyme4ts"; // https://github.com/6tail/tyme4ts
-import { dateFormat } from "../utils/tools";
+import { dateFormat, addSixtyWord } from "../../utils/tools";
 import Toolbar from "./toolbar.vue";
 
 const props = defineProps({
@@ -121,7 +120,7 @@ function setDayList(type, num) {
   dayList.value?.forEach(item => {
     if (!item.SixChar) {
       const d = new Date(item.date * 1000);
-      item.SixChar = addWord(
+      item.SixChar = addSixtyWord(
         d.getFullYear(),
         (d.getMonth() + 1).toString(),
         d.getDate().toString()
@@ -150,20 +149,6 @@ function getBadDays(showCount = 3) {
     )
     .slice(0, showCount);
   // .sort((a, b) => a.date - b.date);
-}
-
-// 添加【天干/地支】字段
-function addWord(year, month, day) {
-  const solarDay = SolarDay.fromYmd(+year, +month, +day);
-  const lunarDay = solarDay.getLunarDay(); // 转为农历 (不包含时辰)
-
-  // console.log("%c [ lunarDay ] >>>", "color:#2656c9", lunarDay.toString());
-
-  const yearTianGan = lunarDay.getYearSixtyCycle(); // 年——天干地支
-  const monthTianGan = lunarDay.getMonthSixtyCycle(); // 月——天干地支
-  const dayTianGan = lunarDay.getSixtyCycle(); // 日——天干地支
-
-  return `${yearTianGan.toString()} ${monthTianGan.toString()} ${dayTianGan.toString()}`;
 }
 
 const allCount = computed(() => {
@@ -231,7 +216,7 @@ watchEffect(() => {
         <a-empty v-if="!dayList.length" description="当月并无数据！" />
 
         <ul>
-          <li class="flex-c justify-start" v-for="(day, index) of dayList">
+          <li class="flex-c justify-start" v-for="(day, index) of dayList" :key="index">
             <p class="label">
               <span>{{ index + 1 }}、{{ day.dateCN }}</span>
               <span>{{ dateFormat(day.date, "dddd") }}</span>
