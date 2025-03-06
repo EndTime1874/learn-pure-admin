@@ -62,12 +62,12 @@ function getData(list) {
 <template>
   <div>
     <h2 class="mb-2">2018年 ~ 2023年 数据汇总</h2>
-    <a-radio-group class="mb-4" v-model:value="userData" @change="onChange">
+    <a-radio-group v-model:value="userData" @change="onChange">
       <a-radio-button value="yyy">yyy</a-radio-button>
       <a-radio-button value="zjj">zjj</a-radio-button>
     </a-radio-group>
 
-    <div class="mb-4" v-for="d of result" :key="d[0].dateYear">
+    <div class="mt-4 mb-4" v-for="d of result" :key="d[0].dateYear">
       <dota2Bar :resultData="d" :year="d[0].dateYear" />
     </div>
   </div>

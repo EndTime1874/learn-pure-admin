@@ -61,8 +61,8 @@ function onChange(date) {
         </a-card>
       </a-collapse-panel>
       <a-collapse-panel key="2" :header="header2.title">
-        {{ header2.info.content }}</a-collapse-panel
-      >
+        {{ header2.info.content }}
+      </a-collapse-panel>
       <a-collapse-panel key="3" :header="header3.title" collapsible="disabled"> </a-collapse-panel>
     </a-collapse>
   </div>

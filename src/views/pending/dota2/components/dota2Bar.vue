@@ -111,6 +111,8 @@ setOptions({
 const dayList = ref([]);
 
 function setDayList(type, num) {
+  console.log("type", type);
+  console.log("num", num);
   if (type === "winSort") {
     dayList.value = getNiceDays(num);
   } else if (type === "loseSort") {
@@ -131,7 +133,7 @@ function setDayList(type, num) {
 // 上分日子（最佳状态）
 function getNiceDays(showCount = 3) {
   return inlineData.value
-    .filter(f => (monthValue.value ? f.dateMount === monthValue.value : f))
+    .filter(f => (monthValue.value ? f.dateMount == monthValue.value : f))
     .sort(
       (a, b) =>
         Number(a.lose_count) - Number(a.win_count) - (Number(b.lose_count) - Number(b.win_count))
@@ -180,6 +182,7 @@ watch(
 watch(
   () => toolbarRef.value?.showType,
   value => {
+    console.log("value", value);
     setDayList(value, toolbarRef.value?.showCount);
   }
 );
@@ -200,12 +203,12 @@ watchEffect(() => {
     <template #title>
       <div class="flex flex-start items-center">
         <p class="mr-4">{{ year }}年</p>
-        <a-date-picker
+        <!-- <a-date-picker
           v-model:value="monthValue"
           valueFormat="YYYY-MM"
           picker="month"
           placeholder="月份"
-        />
+        /> -->
       </div>
     </template>
 

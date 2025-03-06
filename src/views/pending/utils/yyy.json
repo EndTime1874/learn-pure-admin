@@ -3,6 +3,1086 @@
     {
       "data": [
         {
+          "date": "1719763200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1719849600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1719936000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720022400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "4",
+          "win_rate": "75.0%",
+          "win_count": "3",
+          "count_color": "#7F92A525",
+          "date": "1720108800",
+          "lose_count": "1",
+          "win_color": "#C0C21E"
+        },
+        {
+          "date": "1720195200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720281600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720368000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720454400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720540800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720627200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720713600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720800000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720886400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1720972800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721059200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721145600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721232000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721318400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "6",
+          "win_rate": "50.0%",
+          "win_count": "3",
+          "count_color": "#7F92A525",
+          "date": "1721404800",
+          "lose_count": "3",
+          "win_color": "#EFCC16"
+        },
+        {
+          "date": "1721491200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721577600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721664000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721750400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721836800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1721923200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "9",
+          "win_rate": "44.4%",
+          "win_count": "4",
+          "count_color": "#CC92A525",
+          "date": "1722009600",
+          "lose_count": "5",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "10",
+          "win_rate": "60.0%",
+          "win_count": "6",
+          "count_color": "#92A525",
+          "date": "1722096000",
+          "lose_count": "4",
+          "win_color": "#C0C21E"
+        },
+        {
+          "date": "1722182400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1722268800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1722355200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1722441600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1722528000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1722614400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "15",
+          "win_rate": "33.3%",
+          "win_count": "5",
+          "count_color": "#92A525",
+          "date": "1722700800",
+          "lose_count": "10",
+          "win_color": "#C23C2A"
+        },
+        {
+          "date": "1722787200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1722873600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1722960000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1723046400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "4",
+          "win_rate": "50.0%",
+          "win_count": "2",
+          "count_color": "#7F92A525",
+          "date": "1723132800",
+          "lose_count": "2",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "18",
+          "win_rate": "44.4%",
+          "win_count": "8",
+          "count_color": "#92A525",
+          "date": "1723219200",
+          "lose_count": "10",
+          "win_color": "#F1B224"
+        },
+        {
+          "count": "11",
+          "win_rate": "27.3%",
+          "win_count": "3",
+          "count_color": "#92A525",
+          "date": "1723305600",
+          "lose_count": "8",
+          "win_color": "#C23C2A"
+        },
+        {
+          "date": "1723392000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "2",
+          "win_rate": "100%",
+          "win_count": "2",
+          "count_color": "#4C92A525",
+          "date": "1723478400",
+          "lose_count": "0",
+          "win_color": "#C0C21E"
+        },
+        {
+          "count": "4",
+          "win_rate": "25.0%",
+          "win_count": "1",
+          "count_color": "#7F92A525",
+          "date": "1723564800",
+          "lose_count": "3",
+          "win_color": "#F1B224"
+        },
+        {
+          "date": "1723651200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "13",
+          "win_rate": "61.5%",
+          "win_count": "8",
+          "count_color": "#92A525",
+          "date": "1723737600",
+          "lose_count": "5",
+          "win_color": "#92A525"
+        },
+        {
+          "date": "1723824000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1723910400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1723996800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724083200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724169600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724256000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "3",
+          "win_rate": "66.7%",
+          "win_count": "2",
+          "count_color": "#4C92A525",
+          "date": "1724342400",
+          "lose_count": "1",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "7",
+          "win_rate": "0.0%",
+          "win_count": "0",
+          "count_color": "#CC92A525",
+          "date": "1724428800",
+          "lose_count": "7",
+          "win_color": "#C23C2A"
+        },
+        {
+          "date": "1724515200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724601600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724688000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724774400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724860800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1724947200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725033600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725120000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725206400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725292800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725379200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725465600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725552000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725638400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725724800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725811200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725897600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1725984000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726070400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726156800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726243200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726329600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "10",
+          "win_rate": "60.0%",
+          "win_count": "6",
+          "count_color": "#92A525",
+          "date": "1726416000",
+          "lose_count": "4",
+          "win_color": "#C0C21E"
+        },
+        {
+          "date": "1726502400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726588800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726675200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726761600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726848000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1726934400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727020800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727107200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727193600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727280000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727366400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727452800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727539200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727625600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727712000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727798400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727884800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1727971200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728057600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728144000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728230400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728316800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728403200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728489600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728576000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728662400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728748800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728835200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1728921600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729008000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729094400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729180800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729267200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729353600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729440000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729526400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729612800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729699200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729785600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729872000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1729958400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730044800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730131200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730217600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730304000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730390400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730476800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730563200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730649600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730736000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730822400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1730908800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "5",
+          "win_rate": "20.0%",
+          "win_count": "1",
+          "count_color": "#7F92A525",
+          "date": "1730995200",
+          "lose_count": "4",
+          "win_color": "#F29731"
+        },
+        {
+          "count": "13",
+          "win_rate": "46.2%",
+          "win_count": "6",
+          "count_color": "#92A525",
+          "date": "1731081600",
+          "lose_count": "7",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "5",
+          "win_rate": "60.0%",
+          "win_count": "3",
+          "count_color": "#7F92A525",
+          "date": "1731168000",
+          "lose_count": "2",
+          "win_color": "#EFCC16"
+        },
+        {
+          "date": "1731254400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1731340800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "2",
+          "win_rate": "0.0%",
+          "win_count": "0",
+          "count_color": "#4C92A525",
+          "date": "1731427200",
+          "lose_count": "2",
+          "win_color": "#F1B224"
+        },
+        {
+          "count": "14",
+          "win_rate": "35.7%",
+          "win_count": "5",
+          "count_color": "#92A525",
+          "date": "1731513600",
+          "lose_count": "9",
+          "win_color": "#F37A40"
+        },
+        {
+          "count": "3",
+          "win_rate": "66.7%",
+          "win_count": "2",
+          "count_color": "#4C92A525",
+          "date": "1731600000",
+          "lose_count": "1",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "6",
+          "win_rate": "83.3%",
+          "win_count": "5",
+          "count_color": "#7F92A525",
+          "date": "1731686400",
+          "lose_count": "1",
+          "win_color": "#8FB725"
+        },
+        {
+          "count": "9",
+          "win_rate": "33.3%",
+          "win_count": "3",
+          "count_color": "#CC92A525",
+          "date": "1731772800",
+          "lose_count": "6",
+          "win_color": "#F29731"
+        },
+        {
+          "date": "1731859200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1731945600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "1",
+          "win_rate": "100%",
+          "win_count": "1",
+          "count_color": "#4C92A525",
+          "date": "1732032000",
+          "lose_count": "0",
+          "win_color": "#EFCC16"
+        },
+        {
+          "date": "1732118400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "2",
+          "win_rate": "0.0%",
+          "win_count": "0",
+          "count_color": "#4C92A525",
+          "date": "1732204800",
+          "lose_count": "2",
+          "win_color": "#F1B224"
+        },
+        {
+          "count": "8",
+          "win_rate": "62.5%",
+          "win_count": "5",
+          "count_color": "#CC92A525",
+          "date": "1732291200",
+          "lose_count": "3",
+          "win_color": "#C0C21E"
+        },
+        {
+          "count": "4",
+          "win_rate": "75.0%",
+          "win_count": "3",
+          "count_color": "#7F92A525",
+          "date": "1732377600",
+          "lose_count": "1",
+          "win_color": "#C0C21E"
+        },
+        {
+          "count": "1",
+          "win_rate": "100%",
+          "win_count": "1",
+          "count_color": "#4C92A525",
+          "date": "1732464000",
+          "lose_count": "0",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "1",
+          "win_rate": "100%",
+          "win_count": "1",
+          "count_color": "#4C92A525",
+          "date": "1732550400",
+          "lose_count": "0",
+          "win_color": "#EFCC16"
+        },
+        {
+          "date": "1732636800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1732723200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1732809600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "10",
+          "win_rate": "60.0%",
+          "win_count": "6",
+          "count_color": "#92A525",
+          "date": "1732896000",
+          "lose_count": "4",
+          "win_color": "#C0C21E"
+        },
+        {
+          "count": "5",
+          "win_rate": "60.0%",
+          "win_count": "3",
+          "count_color": "#7F92A525",
+          "date": "1732982400",
+          "lose_count": "2",
+          "win_color": "#EFCC16"
+        },
+        {
+          "date": "1733068800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1733155200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1733241600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1733328000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1733414400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "9",
+          "win_rate": "55.6%",
+          "win_count": "5",
+          "count_color": "#CC92A525",
+          "date": "1733500800",
+          "lose_count": "4",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "7",
+          "win_rate": "57.1%",
+          "win_count": "4",
+          "count_color": "#CC92A525",
+          "date": "1733587200",
+          "lose_count": "3",
+          "win_color": "#EFCC16"
+        },
+        {
+          "date": "1733673600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1733760000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1733846400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1733932800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1734019200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "7",
+          "win_rate": "57.1%",
+          "win_count": "4",
+          "count_color": "#CC92A525",
+          "date": "1734105600",
+          "lose_count": "3",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "5",
+          "win_rate": "80.0%",
+          "win_count": "4",
+          "count_color": "#7F92A525",
+          "date": "1734192000",
+          "lose_count": "1",
+          "win_color": "#92A525"
+        },
+        {
+          "date": "1734278400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1734364800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1734451200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "1",
+          "win_rate": "100%",
+          "win_count": "1",
+          "count_color": "#4C92A525",
+          "date": "1734537600",
+          "lose_count": "0",
+          "win_color": "#EFCC16"
+        },
+        {
+          "count": "5",
+          "win_rate": "80.0%",
+          "win_count": "4",
+          "count_color": "#7F92A525",
+          "date": "1734624000",
+          "lose_count": "1",
+          "win_color": "#92A525"
+        },
+        {
+          "count": "14",
+          "win_rate": "42.9%",
+          "win_count": "6",
+          "count_color": "#92A525",
+          "date": "1734710400",
+          "lose_count": "8",
+          "win_color": "#F1B224"
+        },
+        {
+          "count": "10",
+          "win_rate": "10.0%",
+          "win_count": "1",
+          "count_color": "#92A525",
+          "date": "1734796800",
+          "lose_count": "9",
+          "win_color": "#C23C2A"
+        },
+        {
+          "date": "1734883200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1734969600",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1735056000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1735142400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1735228800",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1735315200",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "count": "4",
+          "win_rate": "75.0%",
+          "win_count": "3",
+          "count_color": "#7F92A525",
+          "date": "1735401600",
+          "lose_count": "1",
+          "win_color": "#C0C21E"
+        },
+        {
+          "date": "1735488000",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        },
+        {
+          "date": "1735574400",
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
           "date": "1704038400",
           "count_color": "#0CFFFFFF",
           "win_color": "#0CFFFFFF"
@@ -999,98 +2079,98 @@
         },
         {
           "date": "1718121600",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718208000",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718294400",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718380800",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718467200",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718553600",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718640000",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718726400",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718812800",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718899200",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1718985600",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719072000",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719158400",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719244800",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719331200",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719417600",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719504000",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719590400",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         },
         {
           "date": "1719676800",
-          "count_color": "#02FFFFFF",
-          "win_color": "#02FFFFFF"
+          "count_color": "#0CFFFFFF",
+          "win_color": "#0CFFFFFF"
         }
       ]
     },
