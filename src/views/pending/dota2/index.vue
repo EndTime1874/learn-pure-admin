@@ -8,16 +8,13 @@
 -->
 
 <script setup lang="ts">
-import { onBeforeMount, ref } from "vue";
+import { onBeforeMount, onMounted, ref } from "vue";
 import { regroupArr, dateFormat, compareDates } from "../utils/tools";
 import yyyDataOfDota2 from "../utils/yyy.json";
 import zjjDataOfDota2 from "../utils/zjj.json";
 import dota2Bar from "./components/dota2Bar.vue";
 
-onBeforeMount(() => {
-  onInit();
-});
-
+const tourRef = ref(null);
 const result = ref();
 const userData = ref("yyy");
 
@@ -57,6 +54,21 @@ function getData(list) {
     })
     .flat();
 }
+
+const onStartGuide = () => {
+  // 存储引导状态（防止每次打开都触发）
+  if (!sessionStorage.getItem("tourDone")) {
+    tourRef.value.startTour();
+    // sessionStorage.setItem("tourDone", "true");
+  }
+};
+
+onBeforeMount(() => {
+  onInit();
+});
+onMounted(() => {
+  onStartGuide();
+});
 </script>
 
 <template>

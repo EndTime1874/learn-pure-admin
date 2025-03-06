@@ -111,8 +111,8 @@ setOptions({
 const dayList = ref([]);
 
 function setDayList(type, num) {
-  console.log("type", type);
-  console.log("num", num);
+  // console.log("type", type);
+  // console.log("num", num);
   if (type === "winSort") {
     dayList.value = getNiceDays(num);
   } else if (type === "loseSort") {
