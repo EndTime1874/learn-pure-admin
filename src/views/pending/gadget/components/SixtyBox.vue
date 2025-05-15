@@ -18,10 +18,10 @@ const props = defineProps<{
 
 const sixtyInfo = {
   天干: [
-    { label: "甲", color: "#2e7d32" }, // 木，绿色
-    { label: "乙", color: "#2e7d32" }, // 木，绿色
-    { label: "丙", color: "#d32f2f" }, // 火，红色
-    { label: "丁", color: "#d32f2f" }, // 火，红色
+    { label: "甲", color: "#6be553" }, // 木，绿色
+    { label: "乙", color: "#6be553" }, // 木，绿色
+    { label: "丙", color: "#c6382f" }, // 火，红色
+    { label: "丁", color: "#c6382f" }, // 火，红色
     { label: "戊", color: "#82562b" }, // 土，土色
     { label: "己", color: "#82562b" }, // 土，土色
     { label: "庚", color: "#ffb300" }, // 金，金色
@@ -32,11 +32,11 @@ const sixtyInfo = {
   地支: [
     { label: "子", color: "#0288d1" }, // 水，蓝色
     { label: "丑", color: "#82562b" }, // 土，土色
-    { label: "寅", color: "#2e7d32" }, // 木，绿色
-    { label: "卯", color: "#2e7d32" }, // 木，绿色
+    { label: "寅", color: "#6be553" }, // 木，绿色
+    { label: "卯", color: "#6be553" }, // 木，绿色
     { label: "辰", color: "#82562b" }, // 土，土色
-    { label: "巳", color: "#d32f2f" }, // 火，红色
-    { label: "午", color: "#d32f2f" }, // 火，红色
+    { label: "巳", color: "#c6382f" }, // 火，红色
+    { label: "午", color: "#c6382f" }, // 火，红色
     { label: "未", color: "#82562b" }, // 土，土色
     { label: "申", color: "#ffb300" }, // 金，金色
     { label: "酉", color: "#ffb300" }, // 金，金色
